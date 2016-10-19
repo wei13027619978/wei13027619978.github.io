@@ -19,7 +19,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         })
         .when('/:id', {
             templateUrl: './tpl/bookList.html',
-            controller: 'book_listController'
+            controller: 'bookListController'
         })
         .otherwise({
             redirectTo: '/'
