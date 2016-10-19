@@ -6,3 +6,9 @@ app.controller('bookController', ['$scope', function($scope){
         {id: 'qingchunwenxue', name:'青春文学', img: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2077810900,2007243753&fm=116&gp=0.jpg', description: '文艺青年点进来'}
     ]
 }])
+
+app.controller('book_listController', ['$scope', '$routeParams', commonService, function($scope, $routeParams, c_service){
+    c_service.getDta($routeParams.id, function(res){
+        console.log(res);
+    })
+}])

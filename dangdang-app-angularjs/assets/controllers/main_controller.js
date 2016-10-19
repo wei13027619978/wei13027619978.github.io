@@ -1,10 +1,10 @@
-app.controller('mainController', ['$scope', 'commonService', function($scope, c_service){
+app.controller('mainController', ['$scope', function($scope){
     // c_service.getData('dongman', function(res){
     //     console.dir(res);
     // })
 
-    $scope.selectIndex = 0;
+    $scope.selectedIndex = 0;
     $scope.linkTo = function(index){
-        $scope.selectIndex = index;
+        $scope.selectedIndex = index;
     }
 }])
