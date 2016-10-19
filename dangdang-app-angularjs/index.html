@@ -13,13 +13,13 @@
 
 <body>
     <div ontouchstart class="container" ng-app='app'>
-        <div class="page__bd" style="height: 100%;">
+        <div class="page__bd" style="height: 100%;"  style="position:fixed; bottom:0">
             <div class="weui-tab">
                 <div class="weui-tab__panel">
                     <div ng-view style="">
                     </div>
                 </div>
-                <div class="weui-tabbar"  ng-controller="mainController" style="position:fixed; bottom:0">
+                <div class="weui-tabbar"  ng-controller="mainController">
                     <a href="#/" class="weui-tabbar__item weui-bar__item_on"  ng-click="linkTo(0)">
                         <img src="./assets/images/icon_nav_form.png" alt="" class="weui-tabbar__icon">
                         <p class="weui-tabbar__label">首页</p>
