@@ -1,9 +1,10 @@
-<div class="weui-cells">
-    <div class="weui-cell" ng-repeat="item in bookTypes">
-        <div class="weui-cell__hd"><img ng-src="{{item.img}}" alt="" style="width:20px;margin-right:5px;display:block"></div>
-        <div class="weui-cell__bd">
-            <p>{{item.name}}</p>
-        </div>
-        <div class="weui-cell__ft">{{item.description}}</div>
-    </div>
+<div class="weui-cells" ng-repeat="item in bookTypes">
+
+            <a class="weui-cell weui-cell_access" href="#/{{item.id}}">
+                <div class="weui-cell__hd"><img ng-src="{{item.img}}"></div>
+                <div class="weui-cell__bd">
+                    <p>{{item.name}}</p>
+                </div>
+                <div class="weui-cell__ft">{{item.description}}</div>
+            </a>
 </div>
