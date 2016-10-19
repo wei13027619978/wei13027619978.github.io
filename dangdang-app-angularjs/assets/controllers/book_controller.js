@@ -8,7 +8,7 @@ app.controller('bookController', ['$scope', function($scope){
 }])
 
 app.controller('book_listController', ['$scope', '$routeParams', commonService, function($scope, $routeParams, c_service){
-    c_service.getDta($routeParams.id, function(res){
-        console.log(res);
+    c_service.getData($routeParams.id, function(res){
+        console.dir(res);
     })
 }])
