@@ -1,4 +1,4 @@
-app.factory('commonService', ['$http', function($http){
+angular.module('app').factory('commonService', ['$http', function($http){
     var service = {};
     service.getData = function(type, callBack){
         $http({

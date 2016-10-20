@@ -5,7 +5,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     module: {
-        loader:[
+        loaders:[
             {test: /\.html$/, loader:'html'}
         ]
     }

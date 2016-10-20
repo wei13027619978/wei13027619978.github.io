@@ -52,38 +52,39 @@
 	// <script src="assets/controllers/bookList_controller.js"></script>
 
 
-	// var about_me = require('./tpl/about_me.html');
-	// var blog = require('./tpl/blog.html');
-	// var book = require('./tpl/book.html');
-	// var bookList = require('./tpl/bookList.html');
-	// var index = require('./tpl/index.html');
+	var about_me = __webpack_require__(3);
+	var blog = __webpack_require__(4);
+	var book = __webpack_require__(5);
+	var bookList = __webpack_require__(6);
+	var index = __webpack_require__(7);
+
 
 	var app = angular.module('app', ['ngRoute']);
 
-	__webpack_require__(3);
-	__webpack_require__(4);
-	__webpack_require__(5);
-	__webpack_require__(6);
+	__webpack_require__(8);
+	__webpack_require__(9);
+	__webpack_require__(10);
+	__webpack_require__(11);
 	app.config(['$routeProvider', function ($routeProvider) {
 	    $routeProvider
 	        .when('/', {
-	            templateUrl: '/tpl/index.html',
+	            template: index,
 	            controller: ''
 	        })
 	        .when('/blog', {
-	            templateUrl: '/tpl/blog.html',
+	            template: blog,
 	            controller: ''
 	        })
 	        .when('/book', {
-	            templateUrl: '/tpl/book.html',
+	            template: book,
 	            controller: 'bookController'
 	        })
 	        .when('/about_me', {
-	            templateUrl: '/tpl/about_me.html',
+	            template: about_me,
 	            controller: ''
 	        })
 	        .when('/:id', {
-	            ttemplateUrl: '/tpl/bookList.html',
+	            template: bookList,
 	            controller: 'bookListController'
 	        })
 	        .otherwise({
@@ -32943,7 +32944,37 @@
 /* 3 */
 /***/ function(module, exports) {
 
-	app.factory('commonService', ['$http', function($http){
+	module.exports = "<h1>about_me</h1>";
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	module.exports = "<h1>blog</h1>";
+
+/***/ },
+/* 5 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"weui-cells\" ng-repeat=\"item in bookTypes\">\n    <a class=\"weui-cell weui-cell_access\" href=\"#/:{{item.id}}\">\n        <div class=\"weui-cell__hd\">\n            <img ng-src='{{item.img}}' alt=\" \" style=\"width:20px;margin-right:5px;display:block \">\n        </div>\n        <div class=\"weui-cell__bd \">\n            <p>{{item.name}}</p>\n        </div>\n        <div class=\"weui-cell__ft \">{{item.description}}</div>\n    </a>\n</div>";
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"weui-panel__bd\" ng-app=\"app\">\n    <a href=\"javascript:void(0);\" class=\"weui-media-box weui-media-box_appmsg\" ng-repeat=\"item in data\">\n        <div class=\"weui-media-box__hd\">\n            <img class=\"weui-media-box__thumb\" ng-src=\"{{item.img}}\" alt=\"\">\n        </div>\n        <div class=\"weui-media-box__bd\">\n            <h4 class=\"weui-media-box__title\">{{item.title}}</h4>\n            <p class=\"weui-media-box__desc\">{{item.title}}</p>\n        </div>\n    </a>\n</div>";
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+	module.exports = "<h1>zhuye</h1>";
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	angular.module('app').factory('commonService', ['$http', function($http){
 	    var service = {};
 	    service.getData = function(type, callBack){
 	        $http({
@@ -32960,7 +32991,7 @@
 	}])
 
 /***/ },
-/* 4 */
+/* 9 */
 /***/ function(module, exports) {
 
 	angular.module('app').controller('mainController', ['$scope', function($scope){
@@ -32975,7 +33006,7 @@
 	}])
 
 /***/ },
-/* 5 */
+/* 10 */
 /***/ function(module, exports) {
 
 	angular.module('app').controller('bookController', ['$scope', function($scope){
@@ -32991,7 +33022,7 @@
 
 
 /***/ },
-/* 6 */
+/* 11 */
 /***/ function(module, exports) {
 
 	angular.module('app').controller('bookListController',  
