@@ -50,10 +50,7 @@
 	// <script src="assets/controllers/main_controller.js"></script>
 	// <script src="assets/controllers/book_controller.js"></script>
 	// <script src="assets/controllers/bookList_controller.js"></script>
-	__webpack_require__(3);
-	__webpack_require__(4);
-	__webpack_require__(5);
-	__webpack_require__(6);
+
 
 	// var about_me = require('./tpl/about_me.html');
 	// var blog = require('./tpl/blog.html');
@@ -62,6 +59,11 @@
 	// var index = require('./tpl/index.html');
 
 	var app = angular.module('app', ['ngRoute']);
+
+	__webpack_require__(3);
+	__webpack_require__(4);
+	__webpack_require__(5);
+	__webpack_require__(6);
 	app.config(['$routeProvider', function ($routeProvider) {
 	    $routeProvider
 	        .when('/', {
@@ -32961,7 +32963,7 @@
 /* 4 */
 /***/ function(module, exports) {
 
-	app.controller('mainController', ['$scope', function($scope){
+	angular.module('app').controller('mainController', ['$scope', function($scope){
 	    // c_service.getData('dongman', function(res){
 	    //     console.dir(res);
 	    // })
@@ -32976,7 +32978,7 @@
 /* 5 */
 /***/ function(module, exports) {
 
-	app.controller('bookController', ['$scope', function($scope){
+	angular.module('app').controller('bookController', ['$scope', function($scope){
 	    $scope.bookTypes = [
 	        {id: 'ertong', name:'儿童', img: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2077810900,2007243753&fm=116&gp=0.jpg', description: '这里是适合儿童观看的书籍'},
 	        {id: 'lishi', name:'历史', img: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2077810900,2007243753&fm=116&gp=0.jpg', description: '历史爱好者的福利'},
@@ -32992,7 +32994,7 @@
 /* 6 */
 /***/ function(module, exports) {
 
-	app.controller('bookListController',  
+	angular.module('app').controller('bookListController',  
 	['$scope', '$routeParams', 'commonService', 
 	function($scope, $routeParams, c_service){
 	    console.log($routeParams.id);

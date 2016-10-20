@@ -1,4 +1,4 @@
-app.controller('mainController', ['$scope', function($scope){
+angular.module('app').controller('mainController', ['$scope', function($scope){
     // c_service.getData('dongman', function(res){
     //     console.dir(res);
     // })
