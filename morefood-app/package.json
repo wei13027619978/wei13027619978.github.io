@@ -1,0 +1,14 @@
+{
+  "name": "morefood-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wty",
+  "license": "ISC",
+  "dependencies": {
+    "crawler": "^0.4.3"
+  }
+}
