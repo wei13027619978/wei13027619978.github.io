@@ -9,6 +9,8 @@
   "author": "wty",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
     "crawler": "^0.4.3"
   }
 }

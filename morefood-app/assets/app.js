@@ -1,3 +1,7 @@
+require('./lib/angular');
+require('./lib/angular-route');
+
+
 var app = angular.module('app', ['ngRoute']);
 
 // var index = require('./tpl/index.html');
