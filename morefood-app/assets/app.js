@@ -1,5 +1,3 @@
-require('./lib/angular');
-require('./lib/angular-route');
 
 
 var app = angular.module('app', ['ngRoute']);
