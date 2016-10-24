@@ -12,71 +12,126 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="nav">
-            <div class="nav_login">
-                <a href="http://www.morefood.com/user/login.html?gourl=http%3A%2F%2Fwww.morefood.com%2F" class="login nav_btn"><span>登 陆</span></a>
-                <a href="http://www.morefood.com/user/regist.html?gourl=http%3A%2F%2Fwww.morefood.com%2F" class="register nav_btn"><span>注 册</span></a>
-            </div>
-            <div class="nav_right">
-                <ul>
-                    <li>
-                        <a href="http://www.morefood.com/help/center/1.html" class="nav_right_btn">
-                            <span class="nav_right_zxkf nav_right_img"></span>
-                            <span class="nav_right_txt">在线客服</span>
-                            <span class="nav_right_sjx">x</span>
-                            <div class="zk_zxkf zk" style="display:none">
-                                <span>工作时间</span>
-                                <span>周一至周五: 9:00~23:30</span>
-                                <span>周六至周日: 9:00~00:00</span>
-                            </div>
-                        </a>
-                    </li>
-                    <span class="spacer"></span>
-                    <li>
-                        <a href="http://www.morefood.com/help/center/1.html" class="nav_right_btn">
-                            <span class="nav_right_gzwm nav_right_img"></span>
-                            <span class="nav_right_txt">关注我们</span>
-                            <span class="nav_right_sjx">x</span>
-                            <div class="zk_gzwm zk" style="display:none">
-                                <div class="dyh">
-                                    <span class="dyh_img"></span>
-                                    <span class="dyh_txt">订阅号</span>
+    <div ng-app="app">
+        <div class="container">
+            <div class="nav">
+                <div class="nav_login">
+                    <a href="http://www.morefood.com/user/login.html?gourl=http%3A%2F%2Fwww.morefood.com%2F" class="login nav_btn"><span>登 陆</span></a>
+                    <a href="http://www.morefood.com/user/regist.html?gourl=http%3A%2F%2Fwww.morefood.com%2F" class="register nav_btn"><span>注 册</span></a>
+                </div>
+                <div class="nav_right">
+                    <ul>
+                        <li>
+                            <a href="http://www.morefood.com/help/center/1.html" class="nav_right_btn">
+                                <span class="nav_right_zxkf nav_right_img"></span>
+                                <span class="nav_right_txt">在线客服</span>
+                                <span class="nav_right_sjx">x</span>
+                                <div class="zk_zxkf zk" style="display:none">
+                                    <span>工作时间</span>
+                                    <span>周一至周五: 9:00~23:30</span>
+                                    <span>周六至周日: 9:00~00:00</span>
                                 </div>
-                                <div class="fwh">
-                                    <span class="fwh_img"></span>
-                                    <span class="fwh_txt">服务号</span>
+                            </a>
+                        </li>
+                        <span class="spacer"></span>
+                        <li>
+                            <a href="http://www.morefood.com/help/center/1.html" class="nav_right_btn">
+                                <span class="nav_right_gzwm nav_right_img"></span>
+                                <span class="nav_right_txt">关注我们</span>
+                                <span class="nav_right_sjx">x</span>
+                                <div class="zk_gzwm zk" style="display:none">
+                                    <div class="dyh">
+                                        <span class="dyh_img"></span>
+                                        <span class="dyh_txt">订阅号</span>
+                                    </div>
+                                    <div class="fwh">
+                                        <span class="fwh_img"></span>
+                                        <span class="fwh_txt">服务号</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </li>
-                    <span class="spacer"></span>
-                    <li>
-                        <a href="http://www.morefood.com/help/center/1.html" class="nav_right_btn">
-                            <span class="nav_right_jh nav_right_img"></span>
-                            <span class="nav_right_txt">优惠券激活</span>
-                            <span class="nav_right_sjx">x</span>
-                        </a>
-                    </li>
-                </ul>
+                            </a>
+                        </li>
+                        <span class="spacer"></span>
+                        <li>
+                            <a href="http://www.morefood.com/help/center/1.html" class="nav_right_btn">
+                                <span class="nav_right_jh nav_right_img"></span>
+                                <span class="nav_right_txt">优惠券激活</span>
+                                <span class="nav_right_sjx">x</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <div class="header">
+                <div class="logobar">
+                    <div class="logobar_left">
+                        <img src="./images/logo.gif" alt="">
+                    </div>
+                    <div class="logobar_center">
+                        <div class="center_top">
+                            <input type="text" placeholder="牛奶专区 满100减30" class="search">
+                            <input type="button" class="btn">
+                        </div>
+                        <div class="center_bottom">
+                            <p style="color:rgb(104, 187, 0);font-size:12px">
+                                热门搜索: <a href="" style="color:#ccc;font-size:12px">送礼要用礼盒"装"</a> <a href="" style="color:red;font-size:12px">食之有味</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="logobar_right">
+                        <img src="./images/hxzc.gif" alt="">
+                        <img src="./images/qiye.jpg" alt="">
+                    </div>
+                </div>
+                <div class="navbar">
+                    <span class="nav_left">
+                    <p>全部商品分类</p>
+                    <img src="./images/nav-x-leftico.png" alt="">
+                </span>
+                    <ul class="nav_center" ng-controller="showLabelCtrl">
+                        <li ng-click="linkTo(0)" class="{{selectedIndex==0 ? 'showLabel' : '' }}">
+                            <a href="#/" class="nav_center_a">
+                                <p>首 页</p>
+                            </a>
+                        </li>
+                        <li ng-click="linkTo(1)" class="{{selectedIndex==1 ? 'showLabel' : '' }}">
+                            <a href="#/didamao" class="nav_center_a">
+                                <p>嘀嗒猫</p>
+                            </a>
+                        </li>
+                        <li ng-click="linkTo(2)" class="{{selectedIndex==2 ? 'showLabel' : '' }}">
+                            <a href="#/jinkou" class="nav_center_a">
+                                <p>进口食品</p>
+                            </a>
+                        </li>
+                        <li ng-click="linkTo(3)" class="{{selectedIndex==3 ? 'showLabel' : '' }}">
+                            <a href="#/techan" class="nav_center_a">
+                                <p>特产精选</p>
+                            </a>
+                        </li>
+                        <li ng-click="linkTo(4)" class="{{selectedIndex==4 ? 'showLabel' : '' }}">
+                            <a href="#/kouwei" class="nav_center_a">
+                                <p>口味细分</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.morefood.com/help/app.html?id=6" class="nav_center_a">
+                                <p>APP下载</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div ng-view></div>
         </div>
-        <div class="header">
-            <div class="logobar_left">
-                <img src="./images/logo.gif" alt="">
-            </div>
-            <div class="logobar_center">
-                <input type="text" placeholder="牛奶专区 满100减30" class="search">
-                <span class="btn"></span>
-            </div>
-            <div class="logobar_right">
-                <img src="./images/hxzc.gif" alt="">
-                <img src="" alt="">
-            </div>
-
-        </div>
+        
     </div>
 
+
 </body>
+<script src="http://cdn.bootcss.com/angular.js/1.5.8/angular.js"></script>
+<script src="http://cdn.bootcss.com/angular.js/1.5.8/angular-route.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/controllers/showLabel_controller.js"></script>
 
 </html>

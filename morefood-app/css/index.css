@@ -13,6 +13,9 @@ body{
 a{
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
 .container{
     width: 1130px;
     margin: 0 auto;
@@ -193,6 +196,8 @@ a{
 .header{
     height: 126px;
     border-bottom: 2px solid rgb(104, 187, 0);
+}
+.logobar{
     display: flex;
     justify-content: space-between;
 }
@@ -202,21 +207,76 @@ a{
 }
 .logobar_center{
     margin-top: 25px;
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
 }
-.logobar_center .search{
+.search{
     width: 375px;
     height: 34px;
     border-top: 2px solid rgb(104, 187, 0);
     border-bottom: 1px solid rgb(104, 187, 0);
     border-left: 2px solid rgb(104, 187, 0);
 }
-.logobar_center .btn{
+.btn{
     display: inline-block;
     width: 70px;
     height: 34px;
     background-image: url(../images/top-sousuo.jpg);
+    list-style: none;
+    border:none;
+    position: relative;
+    top: -1px;
+    left: -6px;
 }
+.logobar_right{
+    margin-top: 15px;
+}
+.navbar{
+    width: 1130px;
+    height: 36px;
+    display: flex;
+    justify-content: flex-start;
+}
+.nav_left{
+    background-color: rgb(104, 187, 0);
+    width: 165px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.nav_left img{
+    width: 12px;
+    height: 10px;
+    margin-top: 12px;
+}
+.nav_left p{
+    height: 36px;
+    line-height: 36px;
+    color: white;
+    font-weight: bold;
+}
+.nav_center{
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    height: 36px;
+    margin-left: 10px;
+}
+.nav_center a{
+    display: block;
+    text-align: center;
+    line-height: 36px;
+    width: 80px;
+    color: black;
+    font-weight: 800;
+}
+.showLabel{
+    border-bottom: 5px solid rgb(104, 187, 0);
+}
+.nav_center_a:hover{
+    color: rgb(104, 187, 0);
+}
+
 
 
