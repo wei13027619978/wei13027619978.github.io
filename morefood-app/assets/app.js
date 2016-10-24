@@ -1,5 +1,4 @@
 
-
 var app = angular.module('app', ['ngRoute']);
 
 // var index = require('./tpl/index.html');
