@@ -9,6 +9,7 @@
   "author": "wty",
   "license": "ISC",
   "dependencies": {
-    "crawler": "^0.4.3"
+    "crawler": "^0.4.3",
+    "express": "^4.14.0"
   }
 }

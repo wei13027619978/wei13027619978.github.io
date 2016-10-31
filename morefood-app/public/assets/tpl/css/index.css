@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+.first_images{
+    position: relative;
+    
+}
+.scrollImg_top{
+    height: 420px;
+    width: 1920px;
+    overflow: hidden;
+    animation: imageScroll 1s;
+    
+}
+@keyframes imageScroll{
+    from {
+        top: 0;
+    }
+    to {
+        top: -420px;
+    }
+}
+.index_container{
+    width: 1130px;
+    margin: 0 auto;
+    background-color: white;
+}
+.left_nav{
+    float: left;
+    position: relative;
+    top: -420px;
+}
+.left_nav ul{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 165px;
+}
+.left_nav li{
+    background-image: url(../../images/icon_nav1.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 47px;
+    line-height: 47px;
+}
+.left_nav li a{
+    color: white;
+    font-size: 16px;
+}
+.scrollImg_bottom{
+    
+}
+.scrollImg_bottom ul{
+    display: flex;
+    justify-content: space-between;
+}
+.scrollImg_bottom img{
+    border: 1px solid #ccc;
+    width: 241px;
+    height: 100px;
+}
+.jrtj_head{
+    border-bottom: 3px solid rgb(177, 220, 123);
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+.jrtj_head h1{
+    font-size: 24px;
+    color: green;
+}
